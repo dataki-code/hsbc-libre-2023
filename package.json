@@ -1,0 +1,15 @@
+{
+  "name": "hsbc-libre-2023-tarjetas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/css/style.css --watch"
+  },
+  "author": "Dataki",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}

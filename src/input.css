@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply text-default bg-clouds bg-cover bg-fixed
+}
+
+.card-beneficios{
+    @apply flex flex-col md:flex-row items-center text-center md:text-left shadow-lg py-4 px-3 rounded-lg;
+}
+    .card-beneficios .col-img{
+        @apply flex-1 flex items-center md:w-1/2
+    }
+        .card-beneficios .col-img img{
+            @apply mx-auto
+        }
+
+    .card-beneficios .col-text{
+        @apply  md:w-1/2
+    }
+        .card-beneficios .col-text h4{
+            @apply font-bold text-lg leading-5;
+        }
+            .card-beneficios .col-text h4 small{
+                @apply block font-light text-gray;
+            }
+
+.tab-nav{
+    @apply flex gap-4 mb-4;
+}
+    .tab-nav .tab-nav-item{
+        @apply text-center;
+    }
+        .tab-nav .tab-nav-item img{
+            @apply h-16 mb-2;
+        }
+        .tab-nav .tab-nav-item p{
+            @apply text-xs font-bold;
+        }
+
+.tab-nav .tab-nav-item.active{
+    @apply text-primary underline
+}
+
+
+.tab-content{
+    @apply bg-white p-4 shadow-lg rounded-lg text-left;
+}
+.tab-content ul li{
+    @apply relative pl-6 text-xs mb-2;
+}
+.tab-content ul li:before{
+    @apply content-[''] w-4 h-4 inline-flex bg-check-bg bg-no-repeat absolute top-0.5 left-0
+}
+.content-ul{
+    @apply relative md:bg-light-gray md:p-4 md:rounded-lg
+}
+.content-ul:after{
+    @apply content-[''] w-1 h-[95%] md:h-[83%] absolute left-0.5 md:left-[1.2rem] top-2 md:top-6 border-dashed border-l opacity-40
+}
+.content-ul li{
+    @apply relative pl-6 text-xs md:text-sm mb-2 text-left z-20;
+}
+.content-ul li:before{
+    @apply content-[''] w-1.5 h-1.5 rounded-xl inline-flex bg-secondary bg-no-repeat absolute top-1.5 left-0
+}
+
+.steps{
+    @apply flex flex-wrap justify-center;
+}
+.steps .step-item{
+    @apply w-1/2 md:w-1/3 flex flex-col items-center text-center mb-4;
+}
+.steps .step-item img{
+    @apply mb-4 h-16 md:h-24;
+}
+.steps .step-item .number{
+    @apply w-5 h-5 bg-primary rounded-full text-white font-bold flex items-center justify-center text-sm mb-2;
+}
+.steps .step-item p{
+    @apply text-xs md:text-sm;
+}
+
+
+.footer-social-li{
+    @apply flex gap-3;
+}
+.footer-social-li li img{
+    @apply h-5;
+}
+
+.legal-text{
+    @apply px-4 pt-4 pb-24 md:px-8 md:pt-8;
+}
+.legal-text p {
+    @apply mb-3 break-words text-xs text-gray;
+}
+.cta-fixed{
+    @apply bg-white px-4 py-2 md:py-4 fixed bottom-0 container text-center z-50;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+}

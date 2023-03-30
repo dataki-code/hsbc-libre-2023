@@ -3,11 +3,19 @@
 @tailwind utilities;
 
 body{
-    @apply text-default bg-clouds bg-cover bg-fixed
+    @apply text-default bg-clouds bg-cover bg-fixed;
 }
 
+.wings-container{
+
+    @apply relative top-0 left-0 w-full;
+}
+    .wings-container .wing{
+        @apply absolute;
+    }
+
 .card-beneficios{
-    @apply flex flex-col md:flex-row items-center text-center md:text-left shadow-lg py-4 px-3 rounded-lg;
+    @apply flex flex-col md:flex-row items-center text-center md:text-left shadow-lg py-4 px-3 rounded-lg min-h-[120px];
 }
     .card-beneficios .col-img{
         @apply flex-1 flex items-center md:w-1/2
@@ -27,16 +35,16 @@ body{
             }
 
 .tab-nav{
-    @apply flex gap-4 mb-4;
+    @apply flex gap-4 mb-4 md:mb-6 md:justify-center;
 }
     .tab-nav .tab-nav-item{
         @apply text-center;
     }
         .tab-nav .tab-nav-item img{
-            @apply h-16 mb-2;
+            @apply h-16 md:h-32 mb-2;
         }
         .tab-nav .tab-nav-item p{
-            @apply text-xs font-bold;
+            @apply text-xs md:text-lg font-bold;
         }
 
 .tab-nav .tab-nav-item.active{
@@ -48,7 +56,7 @@ body{
     @apply bg-white p-4 shadow-lg rounded-lg text-left;
 }
 .tab-content ul li{
-    @apply relative pl-6 text-xs mb-2;
+    @apply relative pl-6 text-xs mb-2 md:text-sm;
 }
 .tab-content ul li:before{
     @apply content-[''] w-4 h-4 inline-flex bg-check-bg bg-no-repeat absolute top-0.5 left-0
@@ -101,4 +109,8 @@ body{
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+}
+
+.gradient-alpha{
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
 }

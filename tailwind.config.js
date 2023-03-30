@@ -15,6 +15,9 @@ module.exports = {
       height: {
         '17': '68px',
       },
+      colors:{
+        'transparent': 'transparent'
+      },
       backgroundImage: {
         'hero-bg': "url('../assets/images/img-sky-hero.jpg')",
         'check-bg': "url('../assets/images/icon-check.svg')",

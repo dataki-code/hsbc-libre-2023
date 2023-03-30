@@ -13,17 +13,27 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container xl:max-w-screen-xl mx-auto bg-white">
+  <div class="absolute top-0 left-0 w-full overflow-hidden h-[100vh]">
+    <div class="wings-container container xl:max-w-screen-xl mx-auto">
+      <img src="assets/images/tarjeta-alas-blanca.png" alt="" class="wing wing-1 -left-20 md:-left-36 w-48 top-60 md:top-32 -rotate-12">
+      <img src="assets/images/tarjeta-alas-negra.png" alt="" class="wing wing-2 -left-20 w-40 top-[420px] md:top-96 rotate-12">
+      <img src="assets/images/tarjeta-alas-blanca.png" alt="" class="wing wing-3 -left-56 w-40 top-[600px] -rotate-12">
+      <img src="assets/images/tarjeta-alas-negra.png" alt="" class="wing wing-1 -right-28 w-40 top-32 -rotate-12">
+      <img src="assets/images/tarjeta-alas-blanca.png" alt="" class="wing wing-1 -right-20 md:-right-28 w-40 top-[540px] -rotate-12">
+      <img src="assets/images/tarjeta-alas-negra.png" alt="" class="wing wing-1 -right-20 md:-right-64 w-32 top-96 rotate-12">
+    </div>
+  </div>
+  <div class="container xl:max-w-screen-xl mx-auto">
     <!-- header -->
-    <header class="h-12 md:h-17 shadow-md flex items-center px-2 md:px-8 sticky top-0 bg-white z-50">
+    <header class="h-12 md:h-17 flex items-center px-2 md:px-8 sticky top-0 bg-transparent z-50">
       <img src="assets/images/logo-hsbc.png" alt="HSBC Argentina" class="h-8 md:h-10">
     </header>
     <!-- hero -->
-    <section class="bg-hero-bg bg-no-repeat bg-cover">
+    <section>
       <div class="md:grid grid-cols-2 relative">
-        <div class="flex justify-center flex-col text-center md:text-left py-9 px-4 md:px-24">
-          <h1 class="text-white font-bold text-3xl md:text-2xl mb-2">Libre de ELEGIR <br class="md:hidden" />tu Tarjeta</h1>
-          <p class="text-white text-lg md:text-base mb-4">Sin contratar una Cuenta Bancaria</p>
+        <div class="flex justify-center flex-col text-center md:text-left py-9 px-4 md:px-16">
+          <h1 class="text-white font-bold text-3xl md:text-3xl mb-1 drop-shadow">Libre de ELEGIR <br class="md:hidden" />tu Tarjeta</h1>
+          <p class="text-white text-lg md:text-xl mb-4 drop-shadow">Sin contratar una Cuenta Bancaria</p>
           <div>
             <a href="#" class="bg-primary text-white inline-flex items-center mx-auto md:mr-auto py-2 px-3 rounded-md">
               <img src="assets/images/icon-card-white.svg" alt="Quiero mi Access Now" class="w-7 mr-3"> Quiero mi Access Now
@@ -36,15 +46,17 @@
             <img src="assets/images/img-iso.svg" alt="HSBC" class="relative ml-[60vw] md:ml-40 mt-16 md:mt-24 w-2/3">
           </div>
           
-          <div class="absolute w-full left-0 top-0 md:top-9">
+          <div class="absolute w-full left-0 top-0 md:top-16">
             <img src="assets/images/img-phone-accessnow.png" srcset="assets/images/img-phone-accessnow@2x.png 2x" alt="HSBC" class="relative mx-auto w-[80vw] md:w-[470px]">
           </div>
           
         </div>
       </div>
+      <div class="gradient-alpha h-24"></div>
     </section>
+    
     <!-- body -->
-    <section class="text-center pt-20 pb-12 md:px-12 md:pt-16">
+    <section class="text-center pt-20 pb-12 md:px-12 md:pt-16 bg-white">
       <div class="md:shadow-lg md:overflow-hidden md:relative md:flex md:rounded-lg md:pt-16 md:pb-8">
         <h2 class="bg-secondary text-lg text-white inline-block py-1 px-3 rounded-xl md:rounded-tr-none md:rounded-bl-none font-medium mb-6 md:absolute md:left-0 md:top-0">Beneficios Exclusivos</h2>
         <!-- beneficios -->
@@ -116,7 +128,7 @@
     </section>
     
     <!-- pasos -->
-    <section class="py-4 px-4 md:pb-8">
+    <section class="py-4 px-4 md:pb-8 bg-white">
       <h2 class="text-center font-bold text-xl">¿Cómo pido mi tarjeta?</h2>
       <p class="text-center text-sm mb-6 md:mb-12">Hacelo en <b>simples pasos</b></p>
       <div class="steps">
@@ -137,7 +149,7 @@
         </div>
       </div>
     </section>
-    <footer>
+    <footer class="bg-white">
       <div class="bg-medium-gray flex items-center py-2 px-4 md:px-8">
         <div>
           <img src="assets/images/logo-hsbc.png" alt="HSBC Argentina" class="h-8">

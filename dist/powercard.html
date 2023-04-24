@@ -13,30 +13,52 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="absolute top-0 left-0 w-full overflow-hidden h-[100vh]">
+  <div class="absolute top-0 z-20 left-0 w-full overflow-hidden h-[100vh]">
     <div class="wings-container container xl:max-w-screen-xl mx-auto">
-      <img src="assets/images/tarjeta-alas-blanca.png" alt="" class="wing wing-1 -left-20 md:-left-36 w-48 top-60 md:top-32 -rotate-12">
-      <img src="assets/images/tarjeta-alas-negra.png" alt="" class="wing wing-2 -left-20 w-40 top-[420px] md:top-96 rotate-12">
+      <img src="assets/images/tarjeta-alas-blanca.png" alt="" class="wing wing-1 -left-20 md:-left-36 w-48 top-60 md:top-24 -rotate-12">
+      <img src="assets/images/tarjeta-alas-negra.png" alt="" class="wing wing-2 -left-28 w-40 top-[420px] md:top-72 rotate-12">
       <img src="assets/images/tarjeta-alas-blanca.png" alt="" class="wing wing-3 -left-56 w-40 top-[600px] -rotate-12">
       <img src="assets/images/tarjeta-alas-negra.png" alt="" class="wing wing-1 -right-28 w-40 top-32 -rotate-12">
       <img src="assets/images/tarjeta-alas-blanca.png" alt="" class="wing wing-1 -right-20 md:-right-28 w-40 top-[540px] -rotate-12">
       <img src="assets/images/tarjeta-alas-negra.png" alt="" class="wing wing-1 -right-20 md:-right-64 w-32 top-96 rotate-12">
     </div>
   </div>
-  
-  <div class="container xl:max-w-screen-xl mx-auto">
+  <div class="container xl:max-w-screen-xl mx-auto relative z-30">
     <!-- header -->
     <header class="h-12 md:h-17 flex items-center px-2 md:px-8 sticky top-0 bg-transparent z-50">
       <img src="assets/images/logo-hsbc.png" alt="HSBC Argentina" class="h-8 md:h-10">
     </header>
     <!-- hero -->
-    <section>
-      <div class="md:grid grid-cols-2 relative">
+    <section class="relative">
+      <div class="md:grid grid-cols-2 relative z-10">
         <div class="flex justify-center flex-col text-center md:text-left py-9 px-4 md:px-16">
-          <h1 class="text-white font-bold text-3xl md:text-3xl mb-1 drop-shadow">Libre de ELEGIR <br class="md:hidden" />tu Tarjeta</h1>
-          <p class="text-white text-lg md:text-xl mb-4 drop-shadow">Sin contratar una Cuenta Bancaria</p>
+          <!-- <h1 class="text-white font-bold text-3xl md:text-3xl mb-1 drop-shadow">Libre de ELEGIR <br class="md:hidden" />tu Tarjeta</h1>
+          <p class="text-white text-lg md:text-xl mb-2 drop-shadow">Sin contratar una Cuenta Bancaria</p>
+          <p class="text-white text-lg md:text-xl mb-4 drop-shadow">Aumentá tu poder de compra</p> -->
           <div>
-            <a href="#" class="bg-primary text-white inline-flex items-center mx-auto md:mr-auto py-2 px-3 rounded-md">
+            <h2 class="bg-secondary text-lg text-white inline-flex py-1 px-3 rounded-lg rounded-tr-none rounded-bl-none font-medium mb-4">Beneficios Exclusivos</h2>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4 mb-4 beneficios-hero">
+            <div class="card-beneficios">
+              <div class="col-img">
+                <img src="assets/images/logo-ml.svg" alt="Asistencia" class="mb-3 md:mb-0">
+              </div>
+              <div class="col-text">
+                <h4 class="uppercase">6 cuotas <small>sin interés</small></h4>
+              </div>
+            </div>
+            <div class="card-beneficios">
+              <div class="col-img">
+                <img src="assets/images/ico-pesos.svg" alt="15% OFF Todos los días en todos los Supermercados" class="mb-3 md:mb-0 max-w-[70px]">
+              </div>
+              <div class="col-text">
+                <h4>15% OFF <small>Todos los días en todos los Supermercados</small></h4>
+              </div>
+            </div>
+          </div>
+          <div>
+            <a href="#" class="bg-primary text-white inline-flex items-center mx-auto md:mr-auto py-2 px-3 rounded-md drop-shadow-lg">
               <img src="assets/images/icon-card-white.svg" alt="Quiero mi Access Now" class="w-7 mr-3"> Quiero mi PowerCard
             </a>
           </div>
@@ -44,7 +66,7 @@
         </div>
         <div class="relative h-56 md:h-96">
           <div class="w-full relative overflow-hidden">
-            <img src="assets/images/img-iso.svg" alt="HSBC" class="relative ml-[60vw] md:ml-40 mt-16 md:mt-24 w-2/3">
+            <img src="assets/images/img-iso.svg" alt="HSBC" class="relative ml-[16vw] md:ml-40 mt-16 md:mt-24 w-2/3">
           </div>
           
           <div class="absolute w-full left-0 top-0 md:top-9">
@@ -53,56 +75,22 @@
           
         </div>
       </div>
-      <div class="gradient-alpha h-24"></div>
+      <div class="gradient-alpha h-24 absolute left-0 bottom-0 w-full"></div>
     </section>
+
     <!-- body -->
-    <section class="text-center pt-20 pb-12 md:px-12 md:pt-16 bg-white">
-      <div class="md:shadow-lg md:overflow-hidden md:relative md:flex md:rounded-lg md:pt-16 md:pb-8">
-        <h2 class="bg-secondary text-lg text-white inline-block py-1 px-3 rounded-xl md:rounded-tr-none md:rounded-bl-none font-medium mb-6 md:absolute md:left-0 md:top-0">Beneficios Exclusivos</h2>
-        <!-- beneficios -->
-        <div class="grid grid-cols-2 px-12 md:pl-8 md:pr-0 gap-4 mb-9 md:mb-0 md:grid-cols-1 md:w-1/4">
-          <div class="card-beneficios">
-            <div class="col-img md:flex md:gap-2 md:pr-2">
-              <div>
-                <img src="assets/images/logo-ml.svg" alt="Mercado Libre" class="mb-3 md:mb-0">
-              </div>
-              <div class="hidden md:block">
-                <img src="assets/images/logo-mp.svg" alt="Mercado Libre" class="mb-3 md:mb-0">
-              </div>
-            </div>
-            <div class="col-text">
-              <h4 class="uppercase">6 cuotas <small>sin interés</small></h4>
-            </div>
-          </div>
-          <div class="card-beneficios">
-            <div class="col-img">
-              <img src="assets/images/logo-epicureo.png" srcset="assets/images/logo-epicureo@2x.png 2x" alt="Mundo EPICUREO" class="mb-3 md:mb-0">
-            </div>
-            <div class="col-text">
-              <h4>Experiencias <small>Gastronómicas</small></h4>
-            </div>
-          </div>
-          <div class="card-beneficios">
-            <div class="col-img">
-              <img src="assets/images/logo-ml.svg" alt="Asistencia" class="mb-3 md:mb-0">
-            </div>
-            <div class="col-text">
-              <h4><small>Asistencia</small>Travel Assistant</h4>
-            </div>
-          </div>
-          <div class="card-beneficios">
-            <div class="col-img">
-              <img src="assets/images/img-priority-pass.png" srcset="assets/images/img-priority-pass@2x.png 2x" alt="Priority Pass" class="mb-3 md:mb-0">
-            </div>
-            <div class="col-text">
-              <h4>1.200 Salas Vip <small>En Aeropuertos</small></h4>
-            </div>
-          </div>
-        </div>
+    <section class="text-center pt-20 pb-12 px-6 md:px-12 md:pt-6 bg-white">
+      <div class="text-left">
+        <h1 class="font-bold text-2xl md:text-2xl mb-1 uppercase">Libre de ELEGIR <br class="md:hidden" />tu Tarjeta</h1>
+        <p class="text-lg md:text-xl font-semibold">Sin contratar una Cuenta Bancaria</p>
+        <p class="text-lg md:text-xl font-semibold mb-4">Aumentá tu poder de compra</p>
+      </div>
+      <div class="md:relative md:flex md:pt-16 md:pb-8">
+        
         <!-- tarjetas -->
-        <div class="pt-6 md:w-1/4 md:pt-0 md:px-10">
-          <div class="flex flex-col">
-            <img src="assets/images/img-card-powercard.png" srcset="assets/images/img-card-powercard@2x.png 2x" alt="PowerCard" class="mb-4 mx-auto md:order-2 md:w-full">
+        <div class="pt-6 md:w-1/4 md:pt-0 md:pr-10">
+          <div class="flex flex-col items-baseline">
+            <img src="assets/images/img-card-powercard.png" srcset="assets/images/img-card-powercard@2x.png 2x" alt="PowerCard" class="mb-4 md:order-2 max-w-[208px] md:max-w-none md:w-full">
             <h2 class="text-center font-bold text-xl mb-6 md:mb-2 flex items-center justify-center"><img src="assets/images/icon-card.svg" alt="" class="mr-3 w-7"> PowerCard</h2>
           </div>
         </div>
@@ -111,17 +99,28 @@
           <h4 class="hidden md:block text-left mb-3">Además tenés estos beneficios:</h4>
           <ul class="content-ul">
             <li>Sin paquete de cuentas</li>
-            <li>6 cuotas sin interés en Mercado Libre y Mercado Pago (1)</li>
-            <li><b>Hasta 8 Pases VIP en Aeropuerto.</b> Obtené tu tarjeta de <b>Membresía Visa Airport Companion</b> y accedé a +1200 salas VIP alrededor del mundo. (2)</li>
-            <li><b>Puntos Rewards</b> (2,5 Puntos = $100 consumidos) (3)</li>
-            <li><b>Primeros 3 meses sin cargo y después si la usas no pagas. No tiene renovación anual (4)</b></li>
-            <li>Acceso a Transferencia de Saldo</li>
-            <li>Mundo Epicureo (5)</li>
-            <li>Menor ingreso mínimo requerido: $130.000</li>
-            <li>Si tu consumo mensual es de $80.000 o más ¡te bonificamos la comisión!</li>
+            <li>30% OFF en intereses si pagas el mínimo o parcial <sup><a href="#llamada6">(6)</a></li>
+            <li>15% en todos los super todos los días <sup><a href="#llamada7">(7)</a></li>
+            <li>6 cuotas sin interés en Mercado Libre <sup><a href="#llamada1">(1)</a></li>
+            <li>Ingreso mínimo requerido $45.000</li>
+            <li>Primeros 3 meses sin cargo y después si la usás no pagás. No tiene renovación anual <sup><a href="#llamada4">(4)</a></li>
+            <li>Si tu consumo mensual es de $50.000 o más <b>¡te bonificamos la comisión!</b></li>
             <li>Precio de la comisión mensual con IVA: $2.286,90</li>
           </ul>
 
+        </div>
+
+        <!-- beneficios -->
+        <div class="px-12 pt-9 md:pl-0 md:pr-0 gap-4 mb-9 md:mb-0 md:w-1/4">
+          
+          <div class="card-beneficios">
+            <div class="col-img">
+              <img src="assets/images/ico-porcentaje.png" alt="30% OFF en intereses" class="mb-3 md:mb-0 max-w-[70px]">
+            </div>
+            <div class="col-text">
+              <h4>30% OFF en intereses <small>Si pagás el mínimo o parcial</small></h4>
+            </div>
+          </div>
         </div>
       </div>
       
@@ -129,23 +128,24 @@
     
     <!-- pasos -->
     <section class="py-4 px-4 md:pb-8 bg-white">
-      <h2 class="text-center font-bold text-xl">¿Cómo pido mi tarjeta?</h2>
-      <p class="text-center text-sm mb-6 md:mb-12">Hacelo en <b>simples pasos</b></p>
+      <h2 class="text-center font-bold text-xl mb-6">¿Cómo pido mi tarjeta?</h2>
+      <!-- <p class="text-center text-sm mb-6 md:mb-12">Hacelo en <b>simples pasos</b></p> -->
       <div class="steps">
         <div class="step-item">
-          <img src="assets/images/icon-form.svg" alt="1">
+          <img src="assets/images/icon-form.svg" alt="1" class="step-item-img">
           <h5 class="number">1</h5>
-          <p>Seguí los pasos:<br /><b>Completando tus datos</b></p>
+          <p><b>Completá tus datos</b></p>
         </div>
         <div class="step-item">
-          <img src="assets/images/icon-dni.svg" alt="2">
+          <img src="assets/images/icon-dni.svg" alt="2" class="step-item-img">
           <h5 class="number">2</h5>
-          <p>Tomá fotos:<br /><b>Frente/Dorso del DNI + Selfie</b></p>
+          <p><b>Subí una selfie + Foto de tu DNI</b></p>
         </div>
         <div class="step-item">
-          <img src="assets/images/img-cards-three.png" srcset="assets/images/img-cards-three@2x.png 2x" alt="3">
+          <img src="assets/images/img-card-powercard.png" srcset="assets/images/img-card-powercard@2x.png 2x" alt="PowerCard" class="step-item-img">
+          <!-- <img src="assets/images/img-cards-three.png" srcset="assets/images/img-cards-three@2x.png 2x" alt="3" class="step-item-img"> -->
           <h5 class="number">3</h5>
-          <p>Conocé la:<br /><b>Tarjeta para vos</b></p>
+          <p class="flex"><b>Recibila en tu celular y empezá a comprar</b></p>
         </div>
       </div>
     </section>
@@ -199,7 +199,7 @@
       <div class="block md:hidden">
         <p class="text-xs mb-2">Completá el proceso: Con <b class="text-primary">tu DNI + Selfie</b></p>
         <a href="#" class="bg-primary text-white py-2 px-3 rounded-md flex items-center justify-center">
-          Solicitala Ahora
+          <img src="assets/images/icon-card-white.svg" alt="Quiero mi PowerCard" class="w-7 mr-3"> Quiero mi PowerCard
         </a>
       </div>
       <div class="hidden md:grid grid-cols-3 items-center">
